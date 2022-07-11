@@ -109,8 +109,9 @@ ul
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
+    width: 100%;
 }
-.btn-hire
+.btn
 {
     font-size: 16px;
     font-weight: 500;
@@ -123,9 +124,13 @@ ul
     background: var(--skin-color);
     transition: all 0.3s ease;
 }
-.btn-hire:hover
+.btn:hover
 {
     transform: scale(1.05);
+}
+.shadow-dark
+{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15)    ;
 }
 /* aside */
 .aside
@@ -351,4 +356,204 @@ h3.my-profession
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
+}
+.about .about-content .personal-info
+{
+    flex:  0 0 100%;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about .about-content .personal-info .info-item p
+{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item p span
+{
+    font-weight: 450;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons
+{
+    margin-top: 30px;
+}
+.about .about-content .personal-info .buttons .btn
+{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+/* education */
+.about .about-content .education,
+.about .about-content .experience
+{
+    flex: 0 0 50%;
+    min-width: 50%;
+    margin-top: 30px;
+}
+.about .about-content h3.title
+{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline
+{
+    background: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item
+{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.about .about-content .timeline .timeline-item:last-child
+{
+    padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item::before
+{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background: var(--skin-color);
+}
+.circle-dot
+{
+    background: var(--skin-color);
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about .about-content .timeline .timeline-date
+{
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 7px;
+    color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-date i
+{
+    padding-left: 1px;
+    padding-right: 9px;
+}
+.about .about-content .timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline .timeline-text
+{
+    line-height: 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+}
+/* services */
+.service .container
+{
+    padding-bottom: 40px;
+}
+.service .row
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 26px;
+}
+.service .service-item .service-item-inner
+{
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.service .service-item .service-item-inner:hover
+{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.service .service-item .service-item-inner .icon
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px;
+    text-align: center;
+    align-items: center;
+}
+.service .service-item .service-item-inner .icon .fa
+{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: ease-in-out 0.5s;
+}
+.service .service-item .service-item-inner:hover .icon
+{
+    background: var(--skin-color);
+}
+.service .service-item .service-item-inner:hover .icon .fa
+{
+    font-size: 25px;
+    color: #fff;
+}
+.service .service-item .service-item-inner h4
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service .service-item .service-item-inner p 
+{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+/* portfolio */
+.portfolio .portfolio-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.portfolio .portfolio-heading h2
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portfolio-img img
+{
+    height:20vh;
 }
